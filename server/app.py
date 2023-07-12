@@ -82,7 +82,7 @@ def get_graph(business_category):
     #business_category = '음식'  # 여기에 원하시는 업종을 입력하세요.
     counts = count_business(df, business_category)
     # 그래프 그리기
-    fig = Figure(figsize=(8, 4))
+    fig = Figure(figsize=(10, 6))
     ax = fig.add_subplot(1, 1, 1)
     counts.plot(kind='bar', color='skyblue', ax=ax)
     ax.set_title(f'시군구별 "{business_category}" 업종 상가 수')
