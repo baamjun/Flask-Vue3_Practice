@@ -3,7 +3,7 @@
 - [인턴 가이드라인 참고](https://docs.google.com/document/d/1KRiulTfb3bxYLVlpN6vfGD-cU5dF-siaO-ZXTKAzLwI/edit?usp=sharing)
 - 코드 작성자 : 손범준
 - 코드 작성일 : 2023-07-07 ~
-- 데이터 출처 : 국가중점데이터-상권정보 데이터(https://www.data.go.kr/data/15083033/fileData.do)
+- 데이터 출처 : [국가중점데이터-상권정보 데이터](https://www.data.go.kr/data/15083033/fileData.do)
 - 프로젝트 목적 : flask, vue를 사용해 웹 서비스 구현
 
 ----
@@ -26,14 +26,14 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 - ## 데이터 다운로드하기 
--> 국가중점데이터-상권정보 데이터(https://www.data.go.kr/data/15083033/fileData.do) 
+-> [국가중점데이터-상권정보 데이터](https://www.data.go.kr/data/15083033/fileData.do) 
 
-위 주소에서 csv파일을 다운로드 받아 압축을 풀고 원하시는 지역의 데이터를 server 폴더 아래에 넣어주세요
-<br>(테스트하시려면 서울 지역을 권장합니다.)
-
+위 주소에서 csv파일을 다운로드 받아 압축을 풀고 원하시는 지역의 데이터를 server 폴더 아래에 넣어주세요<br>
+(테스트하시려면 서울 지역을 권장합니다)
+```python
+df = pd.read_csv("소상공인시장진흥공단_상가(상권)정보_서울_202303.csv")
 ```
-server/소상공인시장진흥공단_상가(상권)정보_서울_202303.csv
-```
+다른 지역을 원하시는 경우 server/app.py 파이썬 파일에서 해당 경로/파일명 으로 수정하세요
 - ## Back-end 실행하기
 루트(프로젝트) 폴더에서 아래 명령어를 실행해 적절한 경로로 가주세요
 ```
