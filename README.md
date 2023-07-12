@@ -16,6 +16,10 @@ Front-end : Vue3 / JS
 ----
 # How run?
 
-Back-end : flask run
+download data -> 국가중점데이터-상권정보 데이터(https://www.data.go.kr/data/15083033/fileData.do)
 
-Front-end : npm run dev
+path : server/소상공인시장진흥공단_상가(상권)정보_서울_202303.csv
+
+Back-end activate : flask run
+
+Front-end activate : npm run dev
