@@ -16,6 +16,16 @@ Front-end : Vue3 / JS
 ----
 # How run?
 
+## 가상환경 만들기 
+
+```python
+python -m venv venv
+```
+
+```python
+pip install -r requirements.txt
+```
+
 download data -> 국가중점데이터-상권정보 데이터(https://www.data.go.kr/data/15083033/fileData.do)
 
 path : server/소상공인시장진흥공단_상가(상권)정보_서울_202303.csv

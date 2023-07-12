@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\beomj\2023-hike\projects\venv"
+VIRTUAL_ENV="C:\Users\beomj\2023-hike\Flask-Vue3_Practice\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
